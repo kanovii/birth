@@ -1,0 +1,129 @@
+@import url(reset.css);
+
+.header {
+    width: auto;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    font-size: 50;
+    padding-top: 170px;
+    padding-bottom: 70px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#one {
+    font-size: 74;
+}
+#two_t {
+    margin-top: 30px;
+}
+.header_text {
+    text-align: center;
+}
+.content {
+    margin: 70 30;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+.letter {
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 25px;
+}
+.content_1 {
+    margin: 170 30;
+
+}
+#CHU_12 {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+#CHU {
+    padding-top: 170px;
+    text-align: center;
+    font-size: 97;
+}
+.box {
+    width: 110px;
+    height: 110px;
+    margin: 50px auto 120px;
+    text-align: center;
+    line-height: 110px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-family: 'Poor Story', cursive;
+    animation: pulse 4s infinite;
+    text-decoration: none;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+
+
+}
+a:visited {
+    color: black;
+}
+@keyframes pulse {
+	0% {
+        box-shadow: 0 0 0px 0px rgb(168, 9, 9);
+	}
+    70% {
+        box-shadow: 0 0 0px 0px rgb(168, 9, 9);
+	}
+
+
+	100% {
+        box-shadow: 0 0 15px 15px rgba(134, 11, 11, 0);
+	}
+}
+#imgg {
+    margin: 0 auto 150px;
+    background-image: url(./img/pic.jpg);
+    width: 330px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#imggg {
+    margin: 0 auto 150px;
+    background-image: url(./img/hokan.jpg);
+    width: 330px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+#imgggg {
+    margin: 0 auto 150px;
+    background-image: url(./img/sit.jpg);
+    width: 330px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin-top: 125px;
+}
+#imggggg {
+    margin: 0 auto 150px;
+    background-image: url(./img/wine.jpg);
+    width: 330px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin-top: 0px;
+}
+#imgggggk {
+    margin: 0 auto 150px;
+    background-image: url(./img/in.jpg);
+    width: 330px;
+    height: 500px;
+    background-size: cover;
+    padding: 0;
+    margin-top: 0px;
+}
