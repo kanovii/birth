@@ -9,13 +9,21 @@
     padding-top: 170px;
     padding-bottom: 70px;
     font-family: 'Ubuntu', sans-serif;
+    background-color: white;
 }
 
 #one {
     font-size: 74;
 }
+#onee {
+    font-size: 97;
+    margin-bottom: 20px;
+}
 #two_t {
     margin-top: 30px;
+}
+#twoo {
+    font-size: 43px;
 }
 .header_text {
     text-align: center;
@@ -26,15 +34,19 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    background-color: white;
 
 }
 .letter {
     font-family: 'Nanum Myeongjo', serif;
     line-height: 25px;
+    background-color: white;
 }
 .content_1 {
     margin: 170 30;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 #CHU_12 {
     font-size: 25px;
@@ -55,31 +67,31 @@
     border-radius: 50%;
     font-size: 20px;
     font-family: 'Poor Story', cursive;
-    animation: pulse 4s infinite;
+    animation: pulse 2s infinite;
     text-decoration: none;
 
 }
 a {
     text-decoration: none;
     color: black;
-
-
 }
 a:visited {
     color: black;
 }
 @keyframes pulse {
 	0% {
-        box-shadow: 0 0 0px 0px rgb(168, 9, 9);
+        box-shadow: 0px 0px 0px 0px rgba(22, 1, 1, 0.7);
+        border: solid 0.1px black;
+
 	}
-    70% {
-        box-shadow: 0 0 0px 0px rgb(168, 9, 9);
-	}
+
 
 
 	100% {
-        box-shadow: 0 0 15px 15px rgba(134, 11, 11, 0);
-	}
+        box-shadow: 0 0 15px 15px rgba(22, 1, 1, 0.0);
+        border: solid 0.1px black;
+    }
+    
 }
 #imgg {
     margin: 0 auto 150px;
@@ -127,3 +139,51 @@ a:visited {
     padding: 0;
     margin-top: 0px;
 }
+
+
+
+.loading{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    background:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index:1000; /* 이 값으로 레이어의 위치를 조정합니다. */
+    animation: loading 2s forwards;
+    animation-delay: 2s;
+}
+.l_test {
+    font-size: 40px;
+}
+.l2_test {
+    font-size: 80px;
+
+}
+@keyframes loading {
+	0% {
+
+	}
+    90% {
+        filter: blur(0);
+
+	}
+    99% {
+        z-index: -100;
+        filter: blur(25px);
+        background:none;
+        color: rgba(255, 255, 255, 0);
+
+	}
+	100% {
+        z-index: -100;
+        filter: blur(25px);
+        background:none;
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
